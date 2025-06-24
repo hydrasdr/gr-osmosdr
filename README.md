@@ -22,7 +22,7 @@ hardware, including:
  * Fairwaves XTRX through [libxtrx](https://github.com/myriadrf/libxtrx)
  * Red Pitaya SDR transceiver <http://bazaar.redpitaya.com>
  * FreeSRP through [libfreesrp](https://github.com/myriadrf/libfreesrp)
- * HydraSDR Wideband Receiver through [libhydrasdr](https://hydrasdr.com/)
+ * HydraSDR Wideband Receiver through [libhydrasdr](https://github.com/hydrasdr/rfone_host)
 
 By using the gr-osmosdr block you can take advantage of a common software API in
 your application(s) independent of the underlying radio hardware.
