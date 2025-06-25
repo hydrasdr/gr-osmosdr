@@ -181,6 +181,10 @@ devices_t device::find(const device_t &hint)
   for (std::string dev : rfspace_source_c::get_devices( fake ))
     devices.push_back( device_t(dev) );
 #endif
+#ifdef ENABLE_HYDRASDR
+  for (std::string dev : hydrasdr_source_c::get_devices())
+    devices.push_back( device_t(dev) );
+#endif
 #ifdef ENABLE_AIRSPY
   for (std::string dev : airspy_source_c::get_devices())
     devices.push_back( device_t(dev) );
